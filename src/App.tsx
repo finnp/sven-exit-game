@@ -3,11 +3,13 @@ import Spacer from "./components/Spacer";
 import { useLocation } from "./Router";
 import { ExitDoor } from "./views/ExitDoor";
 import Locations from "./views/Locations";
+import Whiteboard from "./views/Whiteboard";
 
 function App() {
   const { currentLocation } = useLocation();
 
   if (currentLocation === "door") return <ExitDoor />;
+  if (currentLocation === "whiteboard") return <Whiteboard />;
 
   return (
     <div>

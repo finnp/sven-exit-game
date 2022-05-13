@@ -11,6 +11,10 @@ export default function Locations() {
       <Headline>Büro</Headline>
       <LocationList>
         <Location title="Tür" onClick={() => setCurrentLocation("door")} />
+        <Location
+          title="Whiteboard"
+          onClick={() => setCurrentLocation("whiteboard")}
+        />
       </LocationList>
     </Layout>
   );
