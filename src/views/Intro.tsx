@@ -9,7 +9,7 @@ const texts = [
   fällt dir etwas ein: Du hast den Computer bei der Arbeit angelassen! Das
   ist eine Stromverschwendung sondergleichen. So kannst du nicht ins Bett
   gehen.`,
-  `Du schwinkst dich also auf's Fahrrad (Auto fahren wäre ja noch
+  `Du schwingst dich also auf's Fahrrad (Auto fahren wäre ja noch
     verschwenderischer) und machst dich auf den weiten Weg zur Uni. Das ist
     es definitiv wert. 🚴‍♂️`,
   `Als du endlich bei der Uni angekommen bist, machst du dich auf den Weg
