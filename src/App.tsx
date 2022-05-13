@@ -1,6 +1,7 @@
 import Centered from "./components/Centered";
 import Spacer from "./components/Spacer";
 import { useLocation } from "./Router";
+import Computer from "./views/Computer";
 import { ExitDoor } from "./views/ExitDoor";
 import Locations from "./views/Locations";
 import StudentList from "./views/StudentList";
@@ -12,6 +13,7 @@ function App() {
   if (currentLocation === "door") return <ExitDoor />;
   if (currentLocation === "whiteboard") return <Whiteboard />;
   if (currentLocation === "studentlist") return <StudentList />;
+  if (currentLocation === "computer") return <Computer />;
 
   return (
     <div>

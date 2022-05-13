@@ -8,12 +8,7 @@ export default function Whiteboard() {
       <Centered>
         <p>
           Du schaust dir das Whiteboard genauer an. Auf ihr steht groß eine
-          Gleichung. In der Ecke des Whiteboards steht eine kleine Notiz:
-          <em>
-            {" "}
-            Wer f von 3 weiß, der kommt auch raus. Der Zahlen-Code ist erst der
-            Zähler, dann der Nenner.{" "}
-          </em>
+          Gleichung.
         </p>
         <img className="no-border" src={equationUrl} alt="Equation" />
       </Centered>

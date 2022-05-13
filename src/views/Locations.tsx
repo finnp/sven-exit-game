@@ -19,6 +19,10 @@ export default function Locations() {
           title="Liste"
           onClick={() => setCurrentLocation("studentlist")}
         />
+        <Location
+          title="Computer"
+          onClick={() => setCurrentLocation("computer")}
+        />
       </LocationList>
     </Layout>
   );

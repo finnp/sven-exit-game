@@ -12,9 +12,8 @@ export default function StudentList() {
         <ol>
           <li>Sven</li>
           <li>Jan-Niklas</li>
-          <li>Florian</li>
           <li>Benjamin</li>
-          <li>David</li>
+          <li>Tobias</li>
         </ol>
       </div>
     </Location>
