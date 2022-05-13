@@ -11,18 +11,13 @@ import Whiteboard from "./views/Whiteboard";
 function App() {
   const { currentLocation } = useLocation();
 
-  if (currentLocation === '') return <Intro />
+  if (currentLocation === "") return <Intro />;
   if (currentLocation === "door") return <ExitDoor />;
   if (currentLocation === "whiteboard") return <Whiteboard />;
   if (currentLocation === "studentlist") return <StudentList />;
   if (currentLocation === "computer") return <Computer />;
 
-  return (
-    <div>
-      <Locations />
-      <ResetLocalStorage />
-    </div>
-  );
+  return <Locations />;
 }
 
 export default App;
