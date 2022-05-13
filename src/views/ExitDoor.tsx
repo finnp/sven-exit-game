@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { useLocalStorage } from "usehooks-ts";
 import Centered from "../components/Centered";
-import Headline from "../components/Headline";
+import Location from "../components/Location";
 import Spacer from "../components/Spacer";
-import Layout from "../Layout";
 
 export function ExitDoor() {
   const [input, setInput] = useState("");
@@ -13,16 +12,14 @@ export function ExitDoor() {
 
   if (unlocked) {
     return (
-      <Layout>
-        <Headline>Exit Door</Headline>
+      <Location title="Tür">
         <p>Du hast es geschafft! Jetzt aber schnell die Welt retten.</p>
-      </Layout>
+      </Location>
     );
   }
 
   return (
-    <Layout>
-      <Headline>Exit Door</Headline>
+    <Location title="Tür">
       <p>
         Du siehst vor dir eine Tür. Du rüttelst an ihr. Sie ist verschlossen,
         natürlich. Jetzt fällt dir der Zahlencode auf an der Tür. Das ist aber
@@ -33,7 +30,7 @@ export function ExitDoor() {
         <Spacer />
         <button onClick={onSubmitCode}>Submit</button>
       </Centered>
-    </Layout>
+    </Location>
   );
 
   function onSubmitCode() {
