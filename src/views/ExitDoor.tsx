@@ -31,6 +31,9 @@ export function ExitDoor() {
   function onSubmitCode() {
     if (input === doorCode) {
       setUnlocked(true);
+    } else {
+      alert("Der Code stimmt leider nicht!");
+      setInput("");
     }
   }
 }
