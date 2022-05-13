@@ -15,6 +15,10 @@ export default function Locations() {
           title="Whiteboard"
           onClick={() => setCurrentLocation("whiteboard")}
         />
+        <Location
+          title="Liste"
+          onClick={() => setCurrentLocation("studentlist")}
+        />
       </LocationList>
     </Layout>
   );

@@ -3,6 +3,7 @@ import Spacer from "./components/Spacer";
 import { useLocation } from "./Router";
 import { ExitDoor } from "./views/ExitDoor";
 import Locations from "./views/Locations";
+import StudentList from "./views/StudentList";
 import Whiteboard from "./views/Whiteboard";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
 
   if (currentLocation === "door") return <ExitDoor />;
   if (currentLocation === "whiteboard") return <Whiteboard />;
+  if (currentLocation === "studentlist") return <StudentList />;
 
   return (
     <div>
