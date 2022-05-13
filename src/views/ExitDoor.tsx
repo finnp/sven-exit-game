@@ -8,7 +8,7 @@ export function ExitDoor() {
   const [input, setInput] = useState("");
   const [unlocked, setUnlocked] = useLocalStorage("exitdoorUnlocked", false);
 
-  const doorCode = "1234";
+  const doorCode = "2027";
 
   if (unlocked) {
     return (
