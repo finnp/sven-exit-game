@@ -13,18 +13,21 @@ export default function Computer() {
       <Location title="Computer">
         <p>
           Du hast es geschafft, der Desktop from Frau Prof. Knust erscheint. Auf
-          dem Desktop befindet sich eine einzige Datei <code>türcode.txt</code>.{" "}
+          dem Desktop befindet sich eine einzige Datei <code>türcode.mp4</code>.{" "}
           Du öffnest sie.
         </p>
         <p className="paper">
-          Mit-Dozenten von
-          <ul>
-            <li>WS 16/17 Einführung in die Kombinatorische Optimierung</li>
-            <li>SS 17 Scheduling</li>
-            <li>SS 19 Graphenalgorithmen</li>
-            <li>SS 21 Ressourcenbeschränkte Projektplanung</li>
-          </ul>
-          In dieser Reihenfolge
+          <Centered>
+            <iframe
+              width="315"
+              height="560"
+              src="https://www.youtube.com/embed/kvbxLx4vsvY"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </Centered>
         </p>
       </Location>
     );
