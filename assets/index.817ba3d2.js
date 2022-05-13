@@ -84,6 +84,8 @@ Error generating stack: `+i.message+`
   \xFCberlistest dich mit gekonnt berechneten Judo-Wurf, den du auch mit deinen Kung-Fu-Kenntnissen nicht erwidern kannst. F\xFCr einen Moment
   verlierst du das Bewusstsein. Als du wieder aufwachst, bist du in Ihrem B\xFCro eingeschlossen!`];function jm(){const[e,t]=q.exports.useState(0),{setCurrentLocation:n}=Ii();return Te(Ri,{children:[R(Un,{children:"Exit: Uni Osnabr\xFCck"}),R("p",{children:Da[e]}),R(jn,{children:R("button",{onClick:r,children:"Weiter"})})]});function r(){e===Da.length-1&&n("home"),t(e+1)}}function Um(){const{setCurrentLocation:e}=Ii();return Te(Ri,{children:[R(Un,{children:"B\xFCro"}),Te(Bm,{children:[R(al,{title:"T\xFCr",onClick:()=>e("door")}),R(al,{title:"Whiteboard",onClick:()=>e("whiteboard")}),R(al,{title:"Liste",onClick:()=>e("studentlist")}),R(al,{title:"Computer",onClick:()=>e("computer")})]})]})}const Bm=Br.div`
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
 `;function al({title:e,onClick:t}){return R(Wm,{className:"card",onClick:t,children:R("div",{className:"card-body",children:R("h3",{children:e})})})}const Wm=Br.div`
   min-width: 200px;
