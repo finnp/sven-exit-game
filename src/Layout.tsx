@@ -1,11 +1,9 @@
-import styled from "styled-components";
+import { ReactNode } from "react";
 
-const Layout = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 32px;
-`;
-
-export default Layout;
+export default function Layout({ children }: { children: ReactNode }) {
+  return (
+    <div style={{ marginTop: 32 }} className="paper container">
+      {children}
+    </div>
+  );
+}
