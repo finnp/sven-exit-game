@@ -1,4 +1,10 @@
-import { createContext, ReactNode, useContext, useState } from "react";
+import {
+  createContext,
+  ReactNode,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 
 const RouterContext = createContext({
   currentLocation: "",
@@ -6,13 +12,33 @@ const RouterContext = createContext({
 });
 
 export function RouterProvider({ children }: { children: ReactNode }) {
-  const [currentLocation, setCurrentLocation] = useState("");
+  const [currentLocation, setLocation] = useState("");
+  useBackButton();
 
   return (
     <RouterContext.Provider value={{ currentLocation, setCurrentLocation }}>
       {children}
     </RouterContext.Provider>
   );
+
+  function setCurrentLocation(route: string) {
+    setLocation(route);
+    history.pushState(null, "", `#${route}`);
+  }
+
+  function useBackButton() {
+    useEffect(() => {
+      function updateLocation() {
+        setCurrentLocation(window.location.hash.slice(1));
+      }
+
+      window.addEventListener("popstate", updateLocation);
+
+      return () => {
+        window.removeEventListener("popstate", updateLocation);
+      };
+    }, []);
+  }
 }
 
 export function useLocation() {
