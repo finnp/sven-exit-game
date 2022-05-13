@@ -32,6 +32,8 @@ export function RouterProvider({ children }: { children: ReactNode }) {
         setCurrentLocation(window.location.hash.slice(1));
       }
 
+      updateLocation();
+
       window.addEventListener("popstate", updateLocation);
 
       return () => {

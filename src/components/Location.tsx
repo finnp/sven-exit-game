@@ -5,7 +5,7 @@ import Headline from "./Headline";
 export default function Location({ children, title }: LocationProps) {
   return (
     <Layout>
-      <a href="#">zurück</a>
+      <a href="#home">zurück</a>
       <Headline>{title}</Headline>
       {children}
     </Layout>

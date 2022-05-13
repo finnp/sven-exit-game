@@ -3,6 +3,7 @@ import { useLocalStorage } from "usehooks-ts";
 import Centered from "../components/Centered";
 import Location from "../components/Location";
 import Spacer from "../components/Spacer";
+import End from "./End";
 
 export function ExitDoor() {
   const [input, setInput] = useState("");
@@ -10,13 +11,7 @@ export function ExitDoor() {
 
   const doorCode = "1342";
 
-  if (unlocked) {
-    return (
-      <Location title="Tür">
-        <p>Du hast es geschafft! Jetzt aber schnell die Welt retten.</p>
-      </Location>
-    );
-  }
+  if (unlocked) return <End />;
 
   return (
     <Location title="Tür">
